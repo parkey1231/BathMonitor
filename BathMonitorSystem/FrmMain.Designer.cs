@@ -50,6 +50,7 @@
             this.Pannel = new System.Windows.Forms.Panel();
             this.panel_botton = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnOPC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -206,6 +207,7 @@
             this.panel_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
             this.panel_Left.Controls.Add(this.btnSysMaintenance);
             this.panel_Left.Controls.Add(this.btnExit);
+            this.panel_Left.Controls.Add(this.btnOPC);
             this.panel_Left.Controls.Add(this.btnReport);
             this.panel_Left.Controls.Add(this.btnTrend);
             this.panel_Left.Controls.Add(this.btnAlarm);
@@ -249,7 +251,7 @@
             this.btnReport.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnReport.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnReport.ForeColor = System.Drawing.Color.White;
-            this.btnReport.Location = new System.Drawing.Point(13, 399);
+            this.btnReport.Location = new System.Drawing.Point(12, 309);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(146, 50);
             this.btnReport.TabIndex = 0;
@@ -262,7 +264,7 @@
             this.btnTrend.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnTrend.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnTrend.ForeColor = System.Drawing.Color.White;
-            this.btnTrend.Location = new System.Drawing.Point(13, 325);
+            this.btnTrend.Location = new System.Drawing.Point(13, 253);
             this.btnTrend.Name = "btnTrend";
             this.btnTrend.Size = new System.Drawing.Size(146, 50);
             this.btnTrend.TabIndex = 0;
@@ -275,7 +277,7 @@
             this.btnAlarm.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnAlarm.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnAlarm.ForeColor = System.Drawing.Color.White;
-            this.btnAlarm.Location = new System.Drawing.Point(13, 251);
+            this.btnAlarm.Location = new System.Drawing.Point(13, 197);
             this.btnAlarm.Name = "btnAlarm";
             this.btnAlarm.Size = new System.Drawing.Size(146, 50);
             this.btnAlarm.TabIndex = 0;
@@ -288,7 +290,7 @@
             this.btnCtrlProcess.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnCtrlProcess.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnCtrlProcess.ForeColor = System.Drawing.Color.White;
-            this.btnCtrlProcess.Location = new System.Drawing.Point(13, 103);
+            this.btnCtrlProcess.Location = new System.Drawing.Point(12, 85);
             this.btnCtrlProcess.Name = "btnCtrlProcess";
             this.btnCtrlProcess.Size = new System.Drawing.Size(146, 50);
             this.btnCtrlProcess.TabIndex = 0;
@@ -301,7 +303,7 @@
             this.btnPraraSet.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnPraraSet.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnPraraSet.ForeColor = System.Drawing.Color.White;
-            this.btnPraraSet.Location = new System.Drawing.Point(13, 177);
+            this.btnPraraSet.Location = new System.Drawing.Point(12, 141);
             this.btnPraraSet.Name = "btnPraraSet";
             this.btnPraraSet.Size = new System.Drawing.Size(146, 50);
             this.btnPraraSet.TabIndex = 0;
@@ -352,6 +354,19 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "楚天科技股份有限公司";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnOPC
+            // 
+            this.btnOPC.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnOPC.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnOPC.ForeColor = System.Drawing.Color.White;
+            this.btnOPC.Location = new System.Drawing.Point(12, 365);
+            this.btnOPC.Name = "btnOPC";
+            this.btnOPC.Size = new System.Drawing.Size(146, 50);
+            this.btnOPC.TabIndex = 0;
+            this.btnOPC.Text = "OPC 数据";
+            this.btnOPC.UseVisualStyleBackColor = false;
+            this.btnOPC.Click += new System.EventHandler(this.btnOPC_Click);
             // 
             // FrmMain
             // 
@@ -407,6 +422,7 @@
         private System.Windows.Forms.Button btnTrend;
         private System.Windows.Forms.Button btnSysMaintenance;
         private System.Windows.Forms.Button btnCtrlProcess;
+        private System.Windows.Forms.Button btnOPC;
     }
 }
 
